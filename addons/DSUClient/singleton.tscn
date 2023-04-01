@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc2l8x8gl7c1d"]
+
+[ext_resource type="Script" path="res://addons/DSUClient/DSUClient.gd" id="1_4chta"]
+
+[node name="DsuClient" type="Node"]
+script = ExtResource("1_4chta")

@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="DSUClient Example"
+config/description="See DebugStartDSUClient.gd for how to start the plugin"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+DsuClient="*res://addons/DSUClient/singleton.tscn"
+
+[display]
+
+window/size/mode=2
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/DSUClient/plugin.cfg")
+
+[input]
+
+Motion_X={
+"deadzone": 0.5,
+"events": []
+}
